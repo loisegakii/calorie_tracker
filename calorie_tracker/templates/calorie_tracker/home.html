@@ -1,0 +1,10 @@
+{% extends 'calorie_tracker/base.html' %}
+
+{% block title %}Home - Calorie Counter{% endblock %}
+
+{% block content %}
+  <div class="text-center">
+    <p class="text-xl mb-4">Welcome to your daily food tracker!</p>
+    <a href="{% url 'add_food' %}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Food</a>
+  </div>
+{% endblock %}
