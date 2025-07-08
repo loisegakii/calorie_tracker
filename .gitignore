@@ -1,0 +1,23 @@
+# Python virtual environment
+.venv/
+
+# Django __pycache__
+__pycache__/
+*.py[cod]
+
+# Tailwind & npm
+node_modules/
+*.css.map
+
+# Environment and secrets
+.env
+*.env
+
+# Django staticfiles
+staticfiles/
+
+# VSCode settings
+.vscode/
+
+# SQLite database (if used)
+*.sqlite3

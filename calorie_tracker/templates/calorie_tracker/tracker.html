@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calorie Tracker</title>
+</head>
+<body>
+  <h1>Calorie Tracker</h1>
+
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Food</button>
+  </form>
+
+  <h2>Total Calories: {{ total_calories }}</h2>
+
+  <ul>
+    {% for item in food_items %}
+      <li>{{ item.name }} - {{ item.calories }} cal</li>
+    {% empty %}
+      <li>No food items added yet.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
